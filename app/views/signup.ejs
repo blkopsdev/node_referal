@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title></title>
+    <script>
+    !function(n){
+        if(!("rfmgc" in window)){ 
+            window.rfmgc=function(){
+                var n=[].slice.call(arguments),
+                i=[];
+                if(n.length>0){
+                    i.push(n.shift());
+                    for(var o=0;o<n.length;o++)i.push(n[o])
+                }
+            window.rfmgc.queue.push(i)
+            },
+            window.rfmgc.queue=[],
+            window.rfmgc.token="8572b880ebd1f2a2bda209472f59d788",
+            window.rfmgc.api="//api.referralmagic.co",
+            window.rfmgcConfig&&window.rfmgcConfig.cookieDomain.length>0 ? window.rfmgc.cookieDomain=window.rfmgcConfig.cookieDomain : window.rfmgc.cookieDomain=null;
+            var i=document.createElement("script");
+            i.src="//cdn.referralmagic.co/js/tracker.js?1",
+            i.async=!0;
+            var o=document.getElementsByTagName("script")[0];
+            o.parentNode.insertBefore(i,o)
+            }
+        window.rfmgc
+    }();</script>
+</head>
+ 
+<body>
+    <form id="signup" name="signup" method="post" action="/signup">
+        <label for="email">Email Address</label>
+        <input class="text" name="email" type="email" />
+        <label for="firstname">Firstname</label>
+        <input name="firstname" type="text" />
+        <label for="lastname">Lastname</label>
+        <input name="lastname" type="text" />
+        <label for="password">Password</label>
+        <input name="password" type="password" />
+        <input class="btn" type="submit" value="Sign Up" />
+    </form>
+ 
+</body>
+ 
+</html>
