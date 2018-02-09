@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="icocss/language.css"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="icocss/side_menu.css">
+<link rel="stylesheet" type="text/css" href="icocss/style.css">
 </head>
 
 <body class="dashbody">
@@ -123,10 +124,15 @@
           <div class="row">
             <div class="col-md-12">
               <div class="daslindes" style="height: 50px;">
-                <h3 style="height: 100%; min-width: 450px;">https://www.example.com/sampleref....
-                  <input type="submit" value="copy" style="height: 100%"/>
-                </h3>
-                <h4>Get Bonus by referring new members..... <a href="">Learn more</a></h4>
+                <div class="col-md-6">
+                  <input type="text" value="https://www.example.com/sampleref...." id="referal_link">
+                  <button onclick="copyFunction()" class="copy-btn">Copy</button>
+                </div>
+                <div class="col-md-6">
+                  <h4>Get Bonus by referring new members.....
+                    <a href="">Learn more</a>
+                  </h4>
+                </div>
               </div>
               <div class="linkdesdasbordmain">
                 <ul>
@@ -330,6 +336,17 @@ Highcharts.chart('line_chart', {
     }
 
 });t	
+</script>
+<script>
+  function copyFunction() {
+    /* Get the text field */ 
+    var copyText = document.getElementById("referal_link");
+    /* Select the text field */ 
+    copyText.select();
+    /* Copy the text inside the text field */ 
+    document.execCommand("Copy"); 
+    // alert("Copied the text:" + copyText.value);
+  }
 </script>
 <script src="icojs/owl.carousel.js"></script>
 </html>
