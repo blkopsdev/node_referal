@@ -10,7 +10,6 @@ var mysql 	    = require('mysql2');
 var http        = require('http').Server(app);
 var io          = require('socket.io')(http);
 
-
 //For View/Template Engine
 app.set('view engine', 'ejs');
 app.set('views', './app/views')
