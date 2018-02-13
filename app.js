@@ -57,7 +57,7 @@ models.sequelize.sync().then(function() {
 });
 
 
-app.get('/referal/:user_id', function(req, res) {
+app.get('/referral/:user_id', function(req, res) {
     res.redirect('/signup');
 });
 
