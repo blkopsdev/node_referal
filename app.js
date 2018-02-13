@@ -66,7 +66,10 @@ app.get('/', function(req, res) {
     res.sendfile('app/views/index.html');
 });
 
-
+//Index Route/Routes
+app.get('/test', function (req, res) {
+    res.sendfile('app/views/thankyou.html');
+});
 
 //Socket.io
 var socket = io.of('/'); 
