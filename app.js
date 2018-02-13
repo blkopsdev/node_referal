@@ -58,7 +58,7 @@ models.sequelize.sync().then(function() {
 
 
 app.get('/referal/:user_id', function(req, res) {
-    res.redirect('/dashboard');
+    res.redirect('/signup');
 });
 
 //Index Route/Routes
